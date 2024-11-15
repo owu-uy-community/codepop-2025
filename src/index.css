@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bagners-font: 'Bangers', cursive;
+  --inter-font: 'Inter', sans-serif;
+  --sour-gummy-font: 'Sour Gummy', cursive;
+  --cutive-mono-font: 'Cutive Mono', monospace;
+}

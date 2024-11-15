@@ -1,0 +1,12 @@
+services:
+  code-pop:
+    build: ./
+    image: code-pop-img
+    container_name: code-pop
+    ports:
+      - '5173:5173'
+    volumes:
+      - /pop/node_modules
+      - .:/pop
+    stdin_open: true
+    tty: true

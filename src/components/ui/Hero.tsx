@@ -25,10 +25,11 @@ export default function Hero() {
             className="text-white my-4 bg-black/40 text-lg w-fit drop-shadow-md"
           >
             <span className="font-cutive-mono">
-              16 de Abril de 2025 09:00 - 18:00 - Holberton - Zona America
+              5 de Abril de 2025 09:00 - 18:00 en Holberton - Zona América.
             </span>
           </Snippet>
 
+          {/*
           <Button
             startContent={<TicketIcon className="size-8" />}
             color="success"
@@ -37,6 +38,7 @@ export default function Hero() {
           >
             Quiero mi entrada
           </Button>
+         */}
         </div>
       </div>
     </div>

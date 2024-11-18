@@ -1,4 +1,5 @@
 import {
+  Image,
   Link,
   Navbar,
   NavbarBrand,
@@ -9,6 +10,7 @@ import {
   NavbarMenuToggle,
 } from '@nextui-org/react';
 import { useState } from 'react';
+import logo from '@assets/images/logo-owu.webp';
 
 export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,18 +28,13 @@ export default function MainNavbar() {
         />
         <NavbarBrand>
           <div className="flex items-end relative ">
-            <p
-              className="font-bold font-bangers text-yellow-300 text-5xl drop-shadow-lg"
-              style={{ textShadow: '2px 2px 3px rgba(0,0,0,.9)' }}
-            >
-              CODE
-            </p>
-            <p
-              className="font-bold font-bangers text-4xl text-lime-400 drop-shadow-lg ml-2"
-              style={{ textShadow: '2px 2px 3px rgba(0,0,0,.9)' }}
-            >
-              POP
-            </p>
+            <Link href="https://owu.uy">
+              <Image
+                alt="OWU.UY logo"
+                className="h-16"
+                src={logo}
+              />
+            </Link>
           </div>
         </NavbarBrand>
       </NavbarContent>

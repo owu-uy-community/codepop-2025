@@ -30,7 +30,9 @@ export default function SectionTitle({
         <h1 className="text-5xl md:text-7xl p-2 inline-block w-fit mx-auto font-bangers bg-gradient-to-tr from-yellow-400 via-yellow-400 via-30% to-lime-300 text-transparent bg-clip-text drop-shadow-[4px_4px_1px_rgba(0,0,0,.7)]">
           {title}
         </h1>
-        {icon && <Image src={getIconUrl()} className="w-20 md:w-24 ml-6" />}
+        {icon && (
+          <Image src={getIconUrl()} isBlurred className="w-20 md:w-24 ml-6" />
+        )}
       </div>
 
       {children && (

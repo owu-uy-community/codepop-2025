@@ -6,8 +6,8 @@ import SectionTitle from '../components/ui/SectionTitle';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-items-center w-full min-h-screen max-w-6xl mx-auto px-6 py-4 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col flex-1 gap-8 items-center">
+    <div className="flex flex-col items-center justify-items-center w-full min-h-screen max-w-6xl mx-auto px-2 md:px-6 py-4 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col flex-1 gap-4 md:gap-8 items-center">
         <Section>
           <SectionTitle title="¿A quien va dirigida?">
             Este evento será un punto de encuentro para profesionales,
@@ -28,7 +28,7 @@ export default function Home() {
         </Section> */}
 
         <Section>
-          <SectionTitle title="Sponsors">
+          <SectionTitle title="Sponsors" icon="thank-you">
             Nuestros patrocinadores hacen posible esta conferencia, ayudándonos
             a inspirar y apoyar a la próxima generación de desarrolladores.
           </SectionTitle>
@@ -37,7 +37,7 @@ export default function Home() {
         </Section>
 
         <Section>
-          <SectionTitle title="Comunidades que apoyan">
+          <SectionTitle title="Comunidades" icon="love">
             Conoce a las comunidades que impulsan el conocimiento, la innovación
             y el networking en el mundo del software apoyando este evento.
           </SectionTitle>
@@ -45,7 +45,7 @@ export default function Home() {
         </Section>
 
         <Section>
-          <SectionTitle title="El equipo">
+          <SectionTitle title="El equipo" icon="pow">
             Conoce a las personas creativas que con conocimiento y dedicación,
             generan el espacio ideal para aprender, conectar y crecer en el
             mundo de la programación.

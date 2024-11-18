@@ -1,3 +1,5 @@
+![Code Pop logo](https://github.com/owu-uy-community/codepop-2025/blob/main/public/logo.png?raw=true)
+
 # CODE Pop 2025
 
 The official website for the CODE Pop 2025.
@@ -39,5 +41,5 @@ docker-compose up -d
 Open a browser and navigate to
 
 ```bash
-http://locahost:5173
+http://localhost:5173
 ```

@@ -1,5 +1,4 @@
 import Communities from '../components/Communities';
-import Schedule from '../components/Schedule';
 import Sponsors from '../components/Sponsors';
 import Team from '../components/Team';
 import Section from '../components/ui/Section';
@@ -18,7 +17,7 @@ export default function Home() {
           <span>Agregar contenido aquí</span>
         </Section>
 
-        <Section>
+        {/* <Section>
           <SectionTitle title="La agenda">
             Organizate de la mejor manera para sacar el mayor partido a la
             conferencia, aqu&iacute; te dejamos todos los horarios de charlas y
@@ -26,7 +25,7 @@ export default function Home() {
           </SectionTitle>
 
           <Schedule />
-        </Section>
+        </Section> */}
 
         <Section>
           <SectionTitle title="Sponsors">
@@ -38,6 +37,14 @@ export default function Home() {
         </Section>
 
         <Section>
+          <SectionTitle title="Comunidades que apoyan">
+            Conoce a las comunidades que impulsan el conocimiento, la innovación
+            y el networking en el mundo del software apoyando este evento.
+          </SectionTitle>
+          <Communities />
+        </Section>
+
+        <Section>
           <SectionTitle title="El equipo">
             Conoce a las personas creativas que con conocimiento y dedicación,
             generan el espacio ideal para aprender, conectar y crecer en el
@@ -45,15 +52,6 @@ export default function Home() {
           </SectionTitle>
 
           <Team />
-        </Section>
-
-        <Section>
-          <SectionTitle title="Comunidades que apoyan">
-            Conoce a las personas creativas que con conocimiento y dedicación,
-            generan el espacio ideal para aprender, conectar y crecer en el
-            mundo de la programación.
-          </SectionTitle>
-          <Communities />
         </Section>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

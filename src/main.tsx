@@ -4,7 +4,7 @@ import { NextUIProvider } from '@nextui-org/react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import HomeLayout from './routes/HomeLayour';
+import HomeLayout from './routes/HomeLayout';
 
 const router = createBrowserRouter([
   {

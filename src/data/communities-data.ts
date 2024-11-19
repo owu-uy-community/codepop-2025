@@ -5,43 +5,23 @@ export interface Community {
   linkUrl: string;
 }
 
-const data = [
+export default [
   {
     id: 1,
-    name: "Agile UY",
-    imageUrl: "/communities/agile-uy.webp",
-    linkUrl: "https://www.meetup.com/agileuy/",
+    name: "Elixir Montevideo",
+    imageUrl: "/communities/elixir-mvd.webp",
+    linkUrl: "https://www.meetup.com/elixir-montevideo/",
   },
   {
     id: 2,
-    name: "Angular UY",
-    imageUrl: "/communities/angular-uy.webp",
-    linkUrl: "https://www.meetup.com/angular-mvd/",
+    name: "Ruby Uruguay",
+    imageUrl: "/communities/ruby-uy.webp",
+    linkUrl: "https://ruby.uy/",
   },
   {
     id: 3,
-    name: "AWS Girls",
-    imageUrl: "/communities/aws-girls.png",
-    linkUrl: "https://www.linkedin.com/company/aws-girls-user-group-uy",
-  },
-  {
-    id: 4,
-    name: "OWASP UY",
-    imageUrl: "/communities/owasp.png",
-    linkUrl: "https://www.meetup.com/owasp-uruguay-chapter/",
-  },
-  {
-    id: 5,
-    name: "Elixir UY",
-    imageUrl: "/communities/elixir.png",
-    linkUrl: "https://owu.uy/",
-  },
-  {
-    id: 6,
-    name: "Women techmakers",
-    imageUrl: "/communities/women-tech-makers.webp",
-    linkUrl: "https://www.wtm.uy/",
-  },
+    name: "Python Montevideo",
+    imageUrl: "/communities/py-mvd.webp",
+    linkUrl: "https://www.meetup.com/py-mvd/",
+  }
 ] as Community[];
-
-export default data;

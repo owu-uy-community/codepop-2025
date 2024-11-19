@@ -11,10 +11,10 @@ export default function Home() {
         <Section>
           <SectionTitle title="¿A quien va dirigida?">
             Este evento será un punto de encuentro para profesionales,
-            estudiantes y entusiastas de la tecnología de todo el país.
+            estudiantes y entusiastas de la programación de todo el país.
           </SectionTitle>
 
-          <span>Agregar contenido aquí</span>
+          {/*<span>Agregar contenido aquí</span>*/}
         </Section>
 
         {/* <Section>
@@ -55,7 +55,7 @@ export default function Home() {
         </Section>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        Code pop footer
+        © OWU.UY 2025
       </footer>
     </div>
   );

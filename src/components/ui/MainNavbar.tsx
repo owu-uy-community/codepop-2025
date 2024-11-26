@@ -1,3 +1,4 @@
+import logo from '@assets/images/logo-owu.webp';
 import {
   Image,
   Link,
@@ -10,7 +11,6 @@ import {
   NavbarMenuToggle,
 } from '@nextui-org/react';
 import { useState } from 'react';
-import logo from '@assets/images/logo-owu.webp';
 
 export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +19,9 @@ export default function MainNavbar() {
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
       maxWidth="xl"
-      className="bg-gradient-to-t from-black/1 to-black/50"
+      classNames={{
+        base: 'bg-transparent border-b-2 border-white/15',
+      }}
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -29,11 +31,7 @@ export default function MainNavbar() {
         <NavbarBrand>
           <div className="flex items-end relative ">
             <Link href="https://owu.uy">
-              <Image
-                alt="OWU.UY logo"
-                className="h-16"
-                src={logo}
-              />
+              <Image alt="OWU.UY logo" className="h-12" src={logo} />
             </Link>
           </div>
         </NavbarBrand>
@@ -45,16 +43,16 @@ export default function MainNavbar() {
             color="foreground"
             size="lg"
             href="#"
-            className="text-yellow-400 text-2xl font-sour-gummy drop-shadow-[1px_1px_2px_rgba(0,0,0.1)]"
+            className="relative text-yellow-400 text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)]"
           >
-            Incio
+            Inci0
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
             href="#"
             color="foreground"
-            className="text-2xl font-sour-gummy drop-shadow-[1px_1px_2px_rgba(0,0,0.05)] text-lime-400"
+            className="text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)] text-white"
           >
             Agenda
           </Link>
@@ -63,7 +61,7 @@ export default function MainNavbar() {
           <Link
             color="foreground"
             href="#"
-            className="text-2xl font-sour-gummy drop-shadow-[1px_1px_2px_rgba(0,0,0.05)] text-lime-400"
+            className="text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)] text-white"
           >
             Sponsors
           </Link>
@@ -72,7 +70,7 @@ export default function MainNavbar() {
           <Link
             color="foreground"
             href="#"
-            className="text-2xl font-sour-gummy drop-shadow-[1px_1px_2px_rgba(0,0,0.05)] text-lime-400"
+            className="text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)] text-white"
           >
             El equipo
           </Link>

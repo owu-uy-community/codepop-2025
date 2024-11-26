@@ -1,18 +1,39 @@
-import Communities from '../components/Communities';
-import Sponsors from '../components/Sponsors';
-import Team from '../components/Team';
-import Section from '../components/ui/Section';
-import SectionTitle from '../components/ui/SectionTitle';
+import Communities from '@/components/Communities';
+import SpeakerCard from '@/components/SpeakerCard';
+import Sponsors from '@/components/Sponsors';
+import Team from '@/components/Team';
+import Section from '@/components/ui/Section';
+import SectionTitle from '@/components/ui/SectionTitle';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-items-center w-full min-h-screen max-w-6xl mx-auto px-2 md:px-6 py-4 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col flex-1 items-center justify-items-center w-full min-h-screen max-w-6xl mx-auto px-2 md:px-6 py-4 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col flex-1 gap-4 md:gap-8 items-center">
         <Section>
           <SectionTitle title="¿A quien va dirigida?">
             Este evento será un punto de encuentro para profesionales,
             estudiantes y entusiastas de la programación de todo el país.
           </SectionTitle>
+
+          <div className="flex flex-1 justify-center w-fit gap-10 mx-auto">
+            <SpeakerCard
+              name="Luis Galeas"
+              imageUrl={'/speakers/luis-galeas.png'}
+              title="Mas allá del Hype"
+              description="Por qué las prácticas y arquitecturas sobrevaloradas no cumplen tus expectativas"
+              bio="Founder & CEO of Ambar"
+            />
+
+            <SpeakerCard
+              name="CODE POP"
+              imageUrl={
+                'https://www.owu.uy/_next/image?url=%2Fcarpincho.png&w=3840&q=75'
+              }
+              title="Quiero ser speaker"
+              description="Aún hay tiempos para ser parte de la conferencia, ¡animate!"
+              bio="OWU Code POP 2025"
+            />
+          </div>
 
           {/*<span>Agregar contenido aquí</span>*/}
         </Section>

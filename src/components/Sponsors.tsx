@@ -1,15 +1,8 @@
-import data, { Sponsor } from '@/data/sponsors-data';
+import data from '@/data/sponsors-data';
+import { shuffle } from '@/utils';
 import SponsorItem from '@components/SponsorItem';
 
 export default function Sponsors() {
-  const shuffle = (values: Sponsor[]) => {
-    for (let i = values.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [values[i], values[j]] = [values[j], values[i]];
-    }
-    return values;
-  };
-
   const shuffledSponsors = shuffle(data);
 
   return (

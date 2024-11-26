@@ -13,14 +13,13 @@ export default function CommunityItem({
 }: CommunityItemProps) {
   return (
     <Link href={linkUrl} target="_blank">
-      <div className="flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white/60 hover:bg-white/80 transition-background shadow-lg border-b-[5px] border-b-yellow-400">
+      <div className="flex flex-col py-4 items-center justify-center rounded-lg overflow-hidden bg-white/60 hover:bg-white/80 transition-background shadow-lg border-b-[5px] border-b-yellow-400">
         <div className="bg-yellow-400/70 rounded-full w-32 h-32 absolute blur-3xl bottom-0 left-0"></div>
 
         <div className="overflow-hidden p-0">
           <Image
             alt={name}
             isBlurred
-            isZoomed
             className="object-contain saturate-150"
             height={160}
             src={imageUrl}

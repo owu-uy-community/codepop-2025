@@ -31,7 +31,11 @@ export default function SectionTitle({
           {title}
         </h1>
         {icon && (
-          <Image src={getIconUrl()} isBlurred className="w-20 md:w-24 ml-6" />
+          <Image
+            src={getIconUrl()}
+            isBlurred
+            className="w-20 md:w-24 ml-6 data-[loaded=true]:opacity-70"
+          />
         )}
       </div>
 

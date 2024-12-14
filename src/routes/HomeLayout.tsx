@@ -1,3 +1,4 @@
+import Footer from '@/components/ui/Footer';
 import Hero from '@components/ui/Hero';
 import MainNavbar from '@components/ui/MainNavbar';
 import { Outlet } from 'react-router-dom';
@@ -11,6 +12,7 @@ export default function HomeLayout() {
         <div className="w-full bg-white/70 relative z-20 backdrop-blur-lg border-t-[8px] border-t-yellow-300">
           <Outlet />
         </div>
+        <Footer />
       </div>
     </>
   );

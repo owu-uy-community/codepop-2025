@@ -5,14 +5,14 @@ export default function Hero() {
   return (
     <div className="flex w-full text-white fixed top-0 left-0 h-screen z-10 bg-black">
       <video
-        src="/videos/video-hero-bg.mp4"
+        src="/videos/video-hero-bg-compressed.mp4"
         muted
         autoPlay
         loop
         className="absolute z-10 h-full object-cover opacity-80"
       ></video>
 
-      <div className="flex flex-col w-full p-4 text-center sm:text-left max-w-7xl mx-auto relative z-30">
+      <div className="flex flex-col w-full p-8 text-center sm:text-left max-w-7xl mx-auto relative z-30">
         <div className="flex flex-col pt-20 pb-8 max-w-xl items-center sm:items-start">
           <Image
             src="/logo.png"

@@ -17,7 +17,7 @@ export default function Home() {
         </Section>
 
         <Section>
-          <SectionTitle title="Speakers" icon="thank-you">
+          <SectionTitle title="Speakers" icon="yes">
             Conoce a los speakers que compartirán sus conocimientos y
             experiencias en la conferencia.
           </SectionTitle>
@@ -62,9 +62,6 @@ export default function Home() {
           <Team />
         </Section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        © OWU.UY 2025
-      </footer>
     </div>
   );
 }

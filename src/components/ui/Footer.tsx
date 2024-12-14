@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="relative z-30 flex flex-1 pt-6 backdrop-blur-lg  justify-center border-t-[8px] border-t-yellow-300 bg-gray-700/70">
       <div className="flex flex-col w-full max-w-6xl text-white px-6">
-        <div className="flex flex-1 flex-col md:flex-row items-start justify-between">
+        <div className="flex flex-1 flex-col md:flex-row items-center md:items-start justify-between">
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <span className="text-3xl font-bangers font-semibold text-yellow-300 drop-shadow-[3px_3px_1px_#000000]">
               Creamos y aprendemos juntos
@@ -22,8 +22,10 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-10">
-            <div className="flex flex-col gap-4 mt-10 md:mt-0">
-              <span className="font-bangers text-3xl">Links</span>
+            <div className="flex flex-col gap-4 mt-10 md:mt-0 items-center md:items-start">
+              <span className="font-bangers text-3xl text-yellow-300">
+                Links
+              </span>
               <Link href="#" className="text-white">
                 Home
               </Link>
@@ -38,14 +40,16 @@ export default function Footer() {
               </Link>
             </div>
 
-            <div className="flex flex-col gap-4 mt-10 md:mt-0">
-              <span className="font-bangers text-3xl">De interes</span>
+            <div className="flex flex-col gap-4 mt-10 md:mt-0  items-center md:items-start">
+              <span className="font-bangers text-3xl text-yellow-300">
+                De interes
+              </span>
               <Link
                 href="https://slack.owu.uy/"
                 target="_blank"
                 className="text-white"
               >
-                Sumate a la comunidad (Slack)
+                Sumate a la comunidad
               </Link>
               <Link
                 href="https://www.owu.uy/"

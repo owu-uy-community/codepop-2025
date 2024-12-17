@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-items-center w-full min-h-screen max-w-6xl mx-auto px-2 md:px-6 py-4 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col flex-1 gap-4 md:gap-8 items-center">
-        <Section>
+        <Section id="inicio">
           <SectionTitle title="¿A quien va dirigida?">
             Este evento será un punto de encuentro para profesionales,
             estudiantes y entusiastas de la programación de todo el país.
@@ -25,7 +25,7 @@ export default function Home() {
           <SpeakerList />
         </Section>
 
-        {/* <Section>
+        {/* <Section id="agenda">
           <SectionTitle title="La agenda">
             Organizate de la mejor manera para sacar el mayor partido a la
             conferencia, aqu&iacute; te dejamos todos los horarios de charlas y
@@ -35,7 +35,7 @@ export default function Home() {
           <Schedule />
         </Section> */}
 
-        <Section>
+        <Section id="sponsors">
           <SectionTitle title="Sponsors" icon="thank-you">
             Nuestros patrocinadores hacen posible esta conferencia, ayudándonos
             a inspirar y apoyar a la próxima generación de desarrolladores.
@@ -44,7 +44,7 @@ export default function Home() {
           <Sponsors />
         </Section>
 
-        <Section>
+        <Section id="comunidades">
           <SectionTitle title="Comunidades" icon="love">
             Conoce a las comunidades que impulsan el conocimiento, la innovación
             y el networking en el mundo del software apoyando este evento.
@@ -52,7 +52,7 @@ export default function Home() {
           <Communities />
         </Section>
 
-        <Section>
+        <Section id="equipo">
           <SectionTitle title="El equipo" icon="pow">
             Conoce a las personas creativas que con conocimiento y dedicación,
             generan el espacio ideal para aprender, conectar y crecer en el

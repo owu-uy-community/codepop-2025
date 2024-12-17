@@ -23,7 +23,7 @@ export default function SponsorItem({
       <div className="bg-lime-300 rounded-full w-14 h-14 absolute blur-2xl -right-4 -top-4"></div>
       {imageUrl && (
         <Image
-          className="h-32 w-56 rounded-md object-contain brightness-0 contrast-100 dark:invert filter p-4"
+          className="h-32 w-56 rounded-md object-contain p-4"
           alt={`Logo de ${name}`}
           src={imageUrl}
         />

@@ -27,11 +27,7 @@ export default defineConfig(({ command }) => {
     case "serve":
       return defaultConfig;
     case "build":
-      const custom = {
-        base: '/codepop-2025/'
-      };
-
-      return { ...defaultConfig, ...custom };
+      return defaultConfig;
     default:
       throw `Unknown command: ${command}`;
   }

@@ -10,7 +10,7 @@ console.log('Dir name: ', __dirname);
 
 // https://vite.dev/config/
 //
-export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
+export default defineConfig(({ command }) => {
   const defaultConfig = {
     plugins: [react()],
     resolve: {
@@ -27,9 +27,11 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
     case "serve":
       return defaultConfig;
     case "build":
-      return Object.merge(defaultConfig, {
+      const custom = {
         base: '/codepop-2025/'
-      })
+      };
+
+      return { ...defaultConfig, ...custom };
     default:
       throw `Unknown command: ${command}`;
   }

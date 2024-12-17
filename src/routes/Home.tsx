@@ -1,20 +1,28 @@
-import Communities from '../components/Communities';
-import Sponsors from '../components/Sponsors';
-import Team from '../components/Team';
-import Section from '../components/ui/Section';
-import SectionTitle from '../components/ui/SectionTitle';
+import Communities from '@/components/Communities';
+import SpeakerList from '@/components/SpeakerList';
+import Sponsors from '@/components/Sponsors';
+import Team from '@/components/Team';
+import Section from '@/components/ui/Section';
+import SectionTitle from '@/components/ui/SectionTitle';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-items-center w-full min-h-screen max-w-6xl mx-auto px-2 md:px-6 py-4 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col flex-1 items-center justify-items-center w-full min-h-screen max-w-6xl mx-auto px-2 md:px-6 py-4 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col flex-1 gap-4 md:gap-8 items-center">
         <Section>
           <SectionTitle title="¿A quien va dirigida?">
             Este evento será un punto de encuentro para profesionales,
             estudiantes y entusiastas de la programación de todo el país.
           </SectionTitle>
+        </Section>
 
-          {/*<span>Agregar contenido aquí</span>*/}
+        <Section>
+          <SectionTitle title="Speakers" icon="yes">
+            Conoce a los speakers que compartirán sus conocimientos y
+            experiencias en la conferencia.
+          </SectionTitle>
+
+          <SpeakerList />
         </Section>
 
         {/* <Section>
@@ -54,9 +62,6 @@ export default function Home() {
           <Team />
         </Section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        © OWU.UY 2025
-      </footer>
     </div>
   );
 }

@@ -18,7 +18,6 @@ const data = [
     imageUrl: '/sponsors/estudio-hans.webp',
     linkUrl: 'https://estudiohahn.com/home',
   },
-
   {
     id: 4,
     name: 'Holberton',

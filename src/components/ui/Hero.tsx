@@ -36,6 +36,7 @@ export default function Hero() {
             }}
             variant="bordered"
             className="text-yellow-300 border-yellow-400 my-4 bg-black/40 text-md md:text-lg text-center w-fit drop-shadow-md"
+            symbol=">"
           >
             <span className="font-cutive-mono whitespace-normal">
               5 de Abril de 2025 09:00 - 18:00 en Holberton - Zona América.

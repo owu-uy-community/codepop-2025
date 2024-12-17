@@ -42,25 +42,27 @@ export default function MainNavbar() {
           <Link
             color="foreground"
             size="lg"
-            href="#"
+            href="#inicio"
             className="relative text-yellow-400 text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)]"
           >
-            Inci0
+            Incio
           </Link>
         </NavbarItem>
+        {/*
         <NavbarItem>
           <Link
-            href="#"
+            href="#agenda"
             color="foreground"
             className="text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)] text-white"
           >
             Agenda
           </Link>
         </NavbarItem>
+       */}
         <NavbarItem>
           <Link
             color="foreground"
-            href="#"
+            href="#sponsors"
             className="text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)] text-white"
           >
             Sponsors
@@ -69,7 +71,16 @@ export default function MainNavbar() {
         <NavbarItem>
           <Link
             color="foreground"
-            href="#"
+            href="#comunidades"
+            className="text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)] text-white"
+          >
+            Comunidades
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
+            color="foreground"
+            href="#equipo"
             className="text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)] text-white"
           >
             El equipo
@@ -79,16 +90,21 @@ export default function MainNavbar() {
 
       <NavbarMenu>
         <NavbarMenuItem>
-          <Link color="primary" className="w-full" href="#" size="lg">
+          <Link color="primary" className="w-full" href="#inicio" size="lg">
             Inicio
           </Link>
-          <Link color="primary" className="w-full" href="#" size="lg">
+          {/*
+          <Link color="primary" className="w-full" href="#agenda" size="lg">
             Agenda
           </Link>
-          <Link color="primary" className="w-full" href="#" size="lg">
+         */}
+          <Link color="primary" className="w-full" href="#sponsors" size="lg">
             Sponsors
           </Link>
-          <Link color="primary" className="w-full" href="#" size="lg">
+          <Link color="primary" className="w-full" href="#comunidades" size="lg">
+            Comunidades
+          </Link>
+          <Link color="primary" className="w-full" href="#equipo" size="lg">
             Equipo
           </Link>
         </NavbarMenuItem>

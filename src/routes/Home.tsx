@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col flex-1 items-center justify-items-center w-full min-h-screen max-w-6xl mx-auto px-2 md:px-6 py-4 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col flex-1 gap-4 md:gap-8 items-center">
         <Section id="inicio">
-          <SectionTitle title="¿A quien va dirigida?">
+          <SectionTitle title="¿A quién va dirigida?">
             Este evento será un punto de encuentro para profesionales,
             estudiantes y entusiastas de la programación de todo el país.
           </SectionTitle>
@@ -18,7 +18,7 @@ export default function Home() {
 
         <Section>
           <SectionTitle title="Speakers" icon="yes">
-            Conoce a los speakers que compartirán sus conocimientos y
+            Conocé a los speakers que compartirán sus conocimientos y
             experiencias en la conferencia.
           </SectionTitle>
 
@@ -37,8 +37,8 @@ export default function Home() {
 
         <Section id="sponsors">
           <SectionTitle title="Sponsors" icon="thank-you">
-            Nuestros patrocinadores hacen posible esta conferencia, ayudándonos
-            a inspirar y apoyar a la próxima generación de desarrolladores.
+            Nuestros patrocinadores hacen posible ésta conferencia, ayudándonos
+            a inspirar y apoyar a la próxima generación de programadores.
           </SectionTitle>
 
           <Sponsors />
@@ -46,15 +46,15 @@ export default function Home() {
 
         <Section id="comunidades">
           <SectionTitle title="Comunidades" icon="love">
-            Conoce a las comunidades que impulsan el conocimiento, la innovación
-            y el networking en el mundo del software apoyando este evento.
+            Conocé a las comunidades que impulsan el conocimiento, la innovación
+            y el networking en el mundo del software apoyando éste evento.
           </SectionTitle>
           <Communities />
         </Section>
 
         <Section id="equipo">
           <SectionTitle title="El equipo" icon="pow">
-            Conoce a las personas creativas que con conocimiento y dedicación,
+            Conocé a las personas creativas que con conocimiento y dedicación,
             generan el espacio ideal para aprender, conectar y crecer en el
             mundo de la programación.
           </SectionTitle>

@@ -27,7 +27,7 @@ export default function SectionTitle({
   };
 
   return (
-    <div className="flex w-full flex-col gap-4 text-center mb-10">
+    <div className="flex w-full flex-col gap-4 text-center mb-0 mt-20">
       <div className="flex flex-col-reverse gap-4 md:flex-row w-fit mx-auto items-center ">
         <h1 className="text-5xl md:text-7xl p-2 inline-block w-fit mx-auto font-bangers text-yellow-300  drop-shadow-[4px_4px_1px_rgba(0,0,0,.8)]">
           {title}
@@ -42,7 +42,7 @@ export default function SectionTitle({
       </div>
 
       {children && (
-        <p className="text-xl md:text-2xl max-w-[70%] mx-auto mt-2 mb-8 font-sour-gummy text-gray-900 leading-8 drop-shadow-[1px_1px_1px_rgba(255,255,255,.5)]">
+        <p className="text-xl md:text-2xl max-w-[70%] mx-auto mt-2 mb-16 font-sour-gummy text-gray-900 leading-8 drop-shadow-[1px_1px_1px_rgba(255,255,255,.5)]">
           {children}
         </p>
       )}

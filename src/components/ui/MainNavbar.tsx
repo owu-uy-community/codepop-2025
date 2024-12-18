@@ -10,14 +10,22 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from '@nextui-org/react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import NavLink from './NavLink';
 
 export default function MainNavbar() {
+  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location.hash]);
 
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
+      isMenuOpen={isMenuOpen}
       maxWidth="xl"
       classNames={{
         base: 'bg-transparent border-b-2 border-white/15',
@@ -25,8 +33,8 @@ export default function MainNavbar() {
     >
       <NavbarContent>
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-          className="sm:hidden"
+          aria-label={isMenuOpen ? 'Cerrar menu' : 'Abrir menu'}
+          className="sm:hidden text-white drop-shadow-[1px_1px_1px_rgba(0,0,0,.7)]"
         />
         <NavbarBrand>
           <div className="flex items-end relative ">
@@ -38,15 +46,8 @@ export default function MainNavbar() {
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem isActive>
-          <Link
-            color="foreground"
-            size="lg"
-            href="#inicio"
-            className="relative text-yellow-400 text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)]"
-          >
-            Incio
-          </Link>
+        <NavbarItem>
+          <NavLink title="Inicio" href="#inicio" />
         </NavbarItem>
         {/*
         <NavbarItem>
@@ -60,53 +61,33 @@ export default function MainNavbar() {
         </NavbarItem>
        */}
         <NavbarItem>
-          <Link
-            color="foreground"
-            href="#sponsors"
-            className="text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)] text-white"
-          >
-            Sponsors
-          </Link>
+          <NavLink title="Sponsors" href="#sponsors" />
         </NavbarItem>
         <NavbarItem>
-          <Link
-            color="foreground"
-            href="#comunidades"
-            className="text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)] text-white"
-          >
-            Comunidades
-          </Link>
+          <NavLink title="Comunidades" href="#comunidades" />
         </NavbarItem>
         <NavbarItem>
-          <Link
-            color="foreground"
-            href="#equipo"
-            className="text-2xl font-bangers drop-shadow-[3px_3px_1px_rgba(0,0,0.7)] text-white"
-          >
-            El equipo
-          </Link>
+          <NavLink title="El equipo" href="#equipo" />
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="flex flex-col gap-6 pt-8 bg-transparent">
         <NavbarMenuItem>
-          <Link color="primary" className="w-full" href="#inicio" size="lg">
-            Inicio
-          </Link>
-          {/*
+          <NavLink title="Inicio" href="#inicio" isMobileMenu />
+        </NavbarMenuItem>
+        {/*<NavbarMenuItem>
           <Link color="primary" className="w-full" href="#agenda" size="lg">
             Agenda
           </Link>
-         */}
-          <Link color="primary" className="w-full" href="#sponsors" size="lg">
-            Sponsors
-          </Link>
-          <Link color="primary" className="w-full" href="#comunidades" size="lg">
-            Comunidades
-          </Link>
-          <Link color="primary" className="w-full" href="#equipo" size="lg">
-            Equipo
-          </Link>
+          </NavbarMenuItem>*/}
+        <NavbarMenuItem>
+          <NavLink title="Sponsors" href="#sponsors" isMobileMenu />
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <NavLink title="Comunidades" href="#comunidades" isMobileMenu />
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <NavLink title="El equipo" href="#equipo" isMobileMenu />
         </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>

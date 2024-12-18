@@ -17,7 +17,7 @@ export default function Footer() {
               5 de Abril de 2025 09:00 - 18:00
             </span>
             <span className="font-cutive-mono whitespace-normal">
-              en Holberton - Zona América.
+              en Holberton - Zonamerica.
             </span>
           </div>
 
@@ -33,7 +33,7 @@ export default function Footer() {
                 Contacto
               </Link>
               <Link href="#" className="text-white">
-                Quiero se speaker
+                Quiero ser speaker
               </Link>
               <Link href="#" className="text-white">
                 Quiero ser sponsor

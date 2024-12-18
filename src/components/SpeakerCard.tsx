@@ -20,10 +20,11 @@ export default function SpeakerCard({
     <div className="relative overflow-hidden flex flex-col w-full max-w-[350px] mx-auto rounded-xl drop-shadow-lg border-2 border-black/15 border-t-0">
       <video
         src="/videos/video-speaker-bg.mp4"
+        playsInline
         muted
         autoPlay
         loop
-        className="absolute z-10 h-full object-cover opacity-65"
+        className="absolute z-10 h-full object-cover opacity-65 touch-none"
       ></video>
       <div className="absolute z-20 bg-gradient-to-t from-yellow-500/70 to-yellow-400/10 h-full w-full"></div>
 

@@ -5,11 +5,12 @@ export default function Hero() {
   return (
     <div className="flex w-full text-white fixed top-0 left-0 h-screen z-10 bg-black">
       <video
+        playsInline
         src="/videos/video-hero-bg-compressed.mp4"
         muted
         autoPlay
         loop
-        className="absolute z-10 h-full object-cover opacity-80"
+        className="absolute z-10 h-full object-cover opacity-80 touch-none"
       ></video>
 
       <div className="flex flex-col w-full p-8 text-center sm:text-left max-w-7xl mx-auto relative z-30">
@@ -39,7 +40,7 @@ export default function Hero() {
             symbol=">"
           >
             <span className="font-cutive-mono whitespace-normal">
-              5 de Abril de 2025 09:00 - 18:00 en Holberton - Zona América.
+              5 de Abril de 2025 09:00 - 18:00 en Holberton - Zonamerica.
             </span>
           </Snippet>
 

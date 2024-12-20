@@ -18,7 +18,10 @@ export default function Sponsors() {
         ))}
       </div>
       <div className="flex flex-1 justify-center mt-6">
-        <SponsorItem name="OWU" linkUrl="https://www.owu.uy/">
+        <SponsorItem
+          name="OWU"
+          linkUrl="mailto:sponsors@owu.uy?subject=Quiero%20ser%20sponsor%20de%20Code%20Pop&body=Hola%21%0AHe%20visto%20el%20sitio%20web%20y%20me%20gustar%C3%ADa%20ser%20sponsor%20de%20la%20conferencia."
+        >
           <div className="flex flex-col h-32 w-56 items-center justify-end">
             <span className="font-sour-gummy text-gray-700 text-lg">
               ¡Quiero ser sponsor!

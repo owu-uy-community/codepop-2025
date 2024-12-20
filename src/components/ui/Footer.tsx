@@ -35,9 +35,12 @@ export default function Footer() {
               <Link href="#" className="text-white">
                 Quiero ser speaker
               </Link>
-              <Link href="#" className="text-white">
+              <a
+                href="mailto:sponsors@owu.uy?subject=Quiero%20ser%20sponsor%20de%20Code%20Pop&body=Hola%21%0AHe%20visto%20el%20sitio%20web%20y%20me%20gustar%C3%ADa%20ser%20sponsor%20de%20la%20conferencia."
+                className="text-white"
+              >
                 Quiero ser sponsor
-              </Link>
+              </a>
             </div>
 
             <div className="flex flex-col gap-4 mt-10 md:mt-0  items-center md:items-start">

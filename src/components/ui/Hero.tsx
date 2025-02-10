@@ -40,7 +40,7 @@ export default function Hero() {
             symbol=">"
           >
             <span className="font-cutive-mono whitespace-normal">
-              5 de Abril de 2025 09:00 - 18:00 en Holberton - Zonamerica.
+              5 de Abril de 2025 09:00 - 18:30 en Holberton - Zonamerica.
             </span>
           </Snippet>
 

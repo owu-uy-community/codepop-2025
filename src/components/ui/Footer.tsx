@@ -14,7 +14,7 @@ export default function Footer() {
               Creamos y aprendemos juntos
             </span>
             <span className="font-cutive-mono whitespace-normal mt-2">
-              5 de Abril de 2025 09:00 - 18:00
+              5 de Abril de 2025 09:00 - 18:30
             </span>
             <span className="font-cutive-mono whitespace-normal">
               en Holberton - Zonamerica.

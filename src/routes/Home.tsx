@@ -1,5 +1,4 @@
 import Communities from '@/components/Communities';
-import Schedule from '@/components/schedule/Schedule';
 import SpeakerList from '@/components/SpeakerList';
 import Sponsors from '@/components/Sponsors';
 import Team from '@/components/Team';
@@ -26,15 +25,15 @@ export default function Home() {
           <SpeakerList />
         </Section>
 
-        <Section id="agenda">
-          <SectionTitle title="La agenda">
+        {/* <Section id="agenda">
+          <SectionTitle title="La agenda" icon="get-ready">
             Organizate de la mejor manera para sacar el mayor partido a la
             conferencia, aqu&iacute; te dejamos todos los horarios de charlas y
             workshops
           </SectionTitle>
 
           <Schedule />
-        </Section>
+        </Section> */}
 
         <Section id="sponsors">
           <SectionTitle title="Sponsors" icon="thank-you">

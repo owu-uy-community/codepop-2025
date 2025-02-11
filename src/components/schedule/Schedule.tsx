@@ -22,13 +22,14 @@ export default function Schedule() {
           time={event.time}
           title={event.title}
           speaker={event.speaker}
+          githubUrl={event.githubUrl}
           description={event.description}
           tags={event.tags}
         />
       ))}
 
       <Chip
-        className="font-bold text-md bg-yellow-400 font-sour-gummy text-xl my-4 mx-auto"
+        className="font-bold text-md bg-yellow-400 font-sour-gummy text-xl my-8 mx-auto"
         radius="sm"
       >
         DESCANSO
@@ -42,6 +43,7 @@ export default function Schedule() {
           time={event.time}
           title={event.title}
           speaker={event.speaker}
+          githubUrl={event.githubUrl}
           description={event.description}
           tags={event.tags}
         />

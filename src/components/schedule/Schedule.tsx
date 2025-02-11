@@ -1,6 +1,7 @@
+import ScheduleItem from '@/components/schedule/ScheduleItem';
 import { afternoonEvents, morningEvents } from '@/data/schedule-data';
-import ScheduleItem from '@components/ScheduleItem';
 import { Chip } from '@nextui-org/react';
+import SchedduleClose from './ScheduleClose';
 
 export default function Schedule() {
   if (!morningEvents && !afternoonEvents) {
@@ -21,13 +22,14 @@ export default function Schedule() {
           time={event.time}
           title={event.title}
           speaker={event.speaker}
+          githubUrl={event.githubUrl}
           description={event.description}
           tags={event.tags}
         />
       ))}
 
       <Chip
-        className="font-bold text-md bg-yellow-400 font-sour-gummy text-xl my-4 mx-auto"
+        className="font-bold text-md bg-yellow-400 font-sour-gummy text-xl my-8 mx-auto"
         radius="sm"
       >
         DESCANSO
@@ -41,10 +43,13 @@ export default function Schedule() {
           time={event.time}
           title={event.title}
           speaker={event.speaker}
+          githubUrl={event.githubUrl}
           description={event.description}
           tags={event.tags}
         />
       ))}
+
+      <SchedduleClose />
     </div>
   );
 }

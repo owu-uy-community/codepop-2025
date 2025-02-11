@@ -26,7 +26,7 @@ export default function Home() {
         </Section>
 
         {/* <Section id="agenda">
-          <SectionTitle title="La agenda">
+          <SectionTitle title="La agenda" icon="get-ready">
             Organizate de la mejor manera para sacar el mayor partido a la
             conferencia, aqu&iacute; te dejamos todos los horarios de charlas y
             workshops

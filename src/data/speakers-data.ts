@@ -7,9 +7,12 @@ export interface Speaker {
   bio: string; // Info that appears in the footer of the card. it should be short.
 }
 
+let id = 0;
+const genId = () => ++id;
+
 const data = [
   {
-    id: 1,
+    id: genId(),
     name: 'Code Pop',
     imageUrl: 'https://www.owu.uy/_next/image?url=%2Fcarpincho.png&w=3840&q=75',
     title: 'Quiero ser speaker',
@@ -17,7 +20,7 @@ const data = [
     bio: 'OWU Code POP 2025',
   },
   {
-    id: 2,
+    id: genId(),
     name: 'Luis Galeas',
     imageUrl: '/speakers/luis-galeas.png',
     title: 'Mas allá del Hype',

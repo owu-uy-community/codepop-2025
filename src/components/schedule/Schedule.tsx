@@ -1,6 +1,7 @@
+import ScheduleItem from '@/components/schedule/ScheduleItem';
 import { afternoonEvents, morningEvents } from '@/data/schedule-data';
-import ScheduleItem from '@components/ScheduleItem';
 import { Chip } from '@nextui-org/react';
+import SchedduleClose from './ScheduleClose';
 
 export default function Schedule() {
   if (!morningEvents && !afternoonEvents) {
@@ -45,6 +46,8 @@ export default function Schedule() {
           tags={event.tags}
         />
       ))}
+
+      <SchedduleClose />
     </div>
   );
 }
